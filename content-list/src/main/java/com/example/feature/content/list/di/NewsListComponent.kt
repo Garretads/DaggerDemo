@@ -17,7 +17,7 @@ import javax.inject.Scope
 annotation class ListScope
 
 @ListScope
-@Component(modules = [NewsListModule::class, ListRepositoryBindModule::class], dependencies = [ApiDeps::class])
+@Component(modules = [ListRepositoryBindModule::class], dependencies = [ApiDeps::class])
 interface NewsListComponent {
     fun inject(fragment: ContentListFragment)
 
@@ -34,18 +34,6 @@ internal class NewsListComponentViewModel : ViewModel() {
 
     val newsListComponent =
         DaggerNewsListComponent.builder().deps(ApiDepsProvider.deps).build()
-
-}
-
-@Module
-class NewsListModule {
-
-    @Provides
-    fun providesListRepository(
-        service: ApiService
-    ): ListRepositoryImpl = ListRepositoryImpl(
-        service = service
-    )
 
 }
 
