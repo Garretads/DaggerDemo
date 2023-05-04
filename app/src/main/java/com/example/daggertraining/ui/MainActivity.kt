@@ -1,10 +1,11 @@
-package com.example.daggertraining
+package com.example.daggertraining.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
+import com.example.daggertraining.R
 
 
 class MainActivity : AppCompatActivity() {

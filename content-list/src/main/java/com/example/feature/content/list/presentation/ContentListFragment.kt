@@ -2,22 +2,17 @@ package com.example.feature.content.list.presentation
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
-import androidx.fragment.app.commit
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.get
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
-import com.example.api.domain.Article
+import com.example.api.domain.model.Article
 import com.example.feature.content.details.presentation.ArticleDetailsArgs
-import com.example.feature.content.details.presentation.ArticleDetailsFragment
 import com.example.feature.content.list.R
 import com.example.feature.content.list.di.NewsListComponentViewModel
 import com.example.feature.content.list.presentation.adapter.NewsListAdapter

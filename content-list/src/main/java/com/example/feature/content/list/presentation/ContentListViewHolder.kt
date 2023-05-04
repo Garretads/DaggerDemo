@@ -9,7 +9,6 @@ data class ContentListViewHolder(
     val recyclerView: RecyclerView,
 ) {
 
-
     companion object {
 
         fun create(view: View) = ContentListViewHolder(

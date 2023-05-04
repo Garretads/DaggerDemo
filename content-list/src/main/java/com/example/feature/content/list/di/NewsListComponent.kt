@@ -4,8 +4,8 @@ import androidx.lifecycle.ViewModel
 import com.example.api.ApiService
 import com.example.api.di.ApiDeps
 import com.example.api.di.ApiDepsProvider
-import com.example.feature.content.list.ListRepository
-import com.example.feature.content.list.ListRepositoryImpl
+import com.example.feature.content.list.domain.ListRepository
+import com.example.feature.content.list.data.ListRepositoryImpl
 import com.example.feature.content.list.presentation.ContentListFragment
 import dagger.Binds
 import dagger.Component

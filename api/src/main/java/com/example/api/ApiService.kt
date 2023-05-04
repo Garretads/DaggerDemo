@@ -1,6 +1,6 @@
 package com.example.api
 
-import com.example.api.domain.Articles
+import com.example.api.domain.model.Articles
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType

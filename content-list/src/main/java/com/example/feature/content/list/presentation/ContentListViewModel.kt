@@ -4,8 +4,7 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import com.example.api.ApiService
-import com.example.feature.content.list.ListRepository
+import com.example.feature.content.list.domain.ListRepository
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.stateIn
@@ -28,6 +27,7 @@ class ContentListViewModel(
             Log.d(TAG, "Error", e)
         }
     }.stateIn(viewModelScope, SharingStarted.Eagerly, emptyList())
+
 
     class Factory @Inject constructor(
         private val newsRepository: Provider<ListRepository>

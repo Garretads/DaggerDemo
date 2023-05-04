@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.api.domain.Article
+import com.example.api.domain.model.Article
 import com.example.feature.content.list.R
 
 internal class NewsListAdapter : ListAdapter<Article, ArticleViewHolder>(ArticleItemCallback()) {

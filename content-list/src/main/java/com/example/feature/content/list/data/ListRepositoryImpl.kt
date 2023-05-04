@@ -1,7 +1,8 @@
-package com.example.feature.content.list
+package com.example.feature.content.list.data
 
 import com.example.api.ApiService
-import com.example.api.domain.Article
+import com.example.api.domain.model.Article
+import com.example.feature.content.list.domain.ListRepository
 
 class ListRepositoryImpl(
     val service: ApiService
