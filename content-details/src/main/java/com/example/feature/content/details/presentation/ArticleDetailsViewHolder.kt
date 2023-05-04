@@ -2,10 +2,12 @@ package com.example.feature.content.details.presentation
 
 import android.view.View
 import android.webkit.WebView
+import android.widget.TextView
+import com.example.feature.content.details.R
 
 data class ArticleDetailsViewHolder(
     val view: View,
-    val webView: WebView,
+    val contentText: TextView,
 ) {
 
     companion object {
@@ -13,7 +15,7 @@ data class ArticleDetailsViewHolder(
         fun create(view: View) =
             ArticleDetailsViewHolder(
                 view = view,
-                webView = view as WebView,
+                contentText = view.findViewById(R.id.articleContent),
             )
 
     }

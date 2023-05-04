@@ -5,10 +5,10 @@ import androidx.fragment.app.Fragment
 
 object ArticleDetailsArgs {
 
-    private const val ARTICLE_URL = "article_url"
+    private const val ARTICLE_ID = "article_id"
 
-    fun getBundle(articleUrl: String) = bundleOf(ARTICLE_URL to articleUrl)
+    fun getBundle(articleId: String) = bundleOf(ARTICLE_ID to articleId)
 
-    internal fun Fragment.getArticleUrl(): String? = arguments?.getString(ARTICLE_URL, null)
+    internal fun Fragment.getArticleId(): String = arguments?.getString(ARTICLE_ID, "") ?: ""
 
 }
